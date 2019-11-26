@@ -3,7 +3,8 @@
 import csv
 
 with open ("désordre", "r") as désordre:
-  print (désordre.read())
+  for x in désordre:
+    print (x)
   if désordre.closed:
     print ("je sais pas quoi")
   
