@@ -20,4 +20,7 @@ class Convert(unittest.TestCase):
     def test_IX_renvoie_9(self):
         self.assertEqual(9,conversion("IX"))
 
+    def test_XL_renvoie_40(self):
+        self.assertEqual(40,conversion("XL"))
+
 unittest.main()
