@@ -4,8 +4,10 @@
 
 def conversion(roman):
     resultat = 0
-    for char in roman:
-        if char == "I":
+    for char, suivant in zip(roman, list(roman[1:]) + [None]):
+        if char == "I" and suivant == "V":
+            resultat -= 1 
+        elif char == "I":
             resultat += 1
         elif char == "V":
             resultat += 5
