@@ -2,7 +2,7 @@
 #additionner les valeurs correspondant aux chiffres romains
 #si un chiffre plus petit précède un chiffre plus grand, il faut soustraire le chiffre plus petit au plus grand
 
-def convertion(roman):
+def conversion(roman):
     resultat = 0
     for char in roman:
         if char == "I":
