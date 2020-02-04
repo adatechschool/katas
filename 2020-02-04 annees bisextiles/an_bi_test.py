@@ -1,7 +1,7 @@
 import unittest
-from an_bi import *
+from an_bi import * 
 
-
+'''
 class YearTest(unittest.TestCase):
     def test_bis_year_2020(self):
         lst_years = [
@@ -19,6 +19,13 @@ class YearTest(unittest.TestCase):
             yr_res = yr.check_year()
             # print("{} = {}".format(lst_years[year_iterator], yr_res))
             self.assertEqual(True, yr_res)
+'''
+
+class YearTest(unittest.TestCase):
+    def test_bissextile(self):
+        year = 2000
+        year.check_year()
 
 if __name__ == '__main__':
     unittest.main()
+

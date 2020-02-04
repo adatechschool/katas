@@ -13,6 +13,22 @@ class Year:
             return True
         else:
             return False
+       
+year = Year(2000)
+year2 = Year(1900)
+year3 = Year(1993)
+year4 = Year(2020)
+year5 = Year(2016)
+year6 = Year(296)
+year7 = Year(-99)
 
+print(year.check_year())
+print(year2.check_year())
+print(year3.check_year())
+print(year4.check_year())
+print(year5.check_year())
+print(year6.check_year())
+print(year7.check_year())
 
 # cls_yr = Year(2007)
+
