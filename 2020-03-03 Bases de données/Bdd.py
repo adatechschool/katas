@@ -8,7 +8,7 @@
 
 import sqlite3
 
-conn = sqlite3.connect('notre-base-de-données.sql3')
+conn = sqlite3.connect('base-test.sqlite3')
 
 cur = conn.cursor()
 
