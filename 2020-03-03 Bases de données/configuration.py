@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-nom_bdd = 'bdd-prod.sqlite3'
+nom_bdd = 'bdd-test.sqlite3'
