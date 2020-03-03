@@ -7,8 +7,9 @@
 # - lister les produits
 
 import sqlite3
+from configuration import nom_bdd
 
-conn = sqlite3.connect('base-prod.sqlite3')
+conn = sqlite3.connect(nom_bdd)
 
 cur = conn.cursor()
 
