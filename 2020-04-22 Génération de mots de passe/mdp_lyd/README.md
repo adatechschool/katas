@@ -1,7 +1,8 @@
-#Variantes et étapes
-##Si on se sent pas très à l’aise : le mot de passe aléatoire
+# Variantes et étapes
 
-###Étapes :
+## Si on se sent pas très à l’aise : le mot de passe aléatoire
+
+### Étapes :
 * pour se lancer, commencer par afficher juste un caractère aléatoire :
 
 ``import random``
