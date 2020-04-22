@@ -1,10 +1,11 @@
 import Data.List
 
-data Color = White | Black deriving (Show, Eq)
-
 data Square = Square { x :: Int
                      , y :: Int
-                     , color :: Color
                      } deriving (Show, Eq)
 
-type World = [Square]
+moveAnt :: Eq a => a -> [a] -> [a]
+moveAnt current blackSq
+  | contain == [] = current:blackSq
+  | otherwise = delete current blackSq
+  where contain = intersect [current] blackSq
