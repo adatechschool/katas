@@ -1,11 +1,13 @@
 import Data.List
 
-data Square = Square { x :: Int
-                     , y :: Int
-                     } deriving (Show, Eq)
+data Direction = Droite | Gauche
+      deriving (Show, Eq, Enum)
 
-moveAnt :: Eq a => a -> [a] -> [a]
-moveAnt current blackSq
-  | contain == [] = current:blackSq
-  | otherwise = delete current blackSq
-  where contain = intersect [current] blackSq
+data Case = Case { x :: Int
+                 , y :: Int
+                 } deriving (Show, Eq)
+
+goto :: Eq a => a -> [a] -> [a]
+goto pos inBlackSq
+  | pos `elem` inBlackSq = inBlackSq 
+  | otherwise = pos:inBlackSq
