@@ -3,18 +3,17 @@
 import random
 import string
 
-lettre = {1:"a", 2:"e", 3:"i", 4:"o", 5:"u"}
-
-#print(random.choice(lettre))
+lettre = {0:"a", 1:"e", 2:"i", 3:"o", 4:"u"}
 
 def mot_aleatoire(nombre):
     i = 0
     phrase = ""
     while i<nombre :
-        phrase += random.choice(lettre)
+        key = random.choice(list(lettre))
+        phrase += lettre[key]
         i += 1
-        print(phrase)
-        print('je suis dans le while')
+        #print(phrase)
+        #print('je suis dans le while')
     return phrase 
 
 print(mot_aleatoire(15))
